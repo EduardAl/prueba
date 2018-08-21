@@ -25,7 +25,8 @@ $discount = $_POST[discount];
      <title></title>
    </head>
    <body>
-
+   <div align="center">
+        <fieldset><legend style="text-align: center;">Confirmation </legend>
 
 
        <h1 >Information</h1>
@@ -34,13 +35,14 @@ $discount = $_POST[discount];
        <p>Birthdate: <b><?php echo $ddate; ?></b></p>
        <p><?php echo $array_doc[$doc-1];?>: <b><?php echo $dnumber; ?></b></p>
        <p>Email: <b><?php echo $email; ?></b></p>
-       <p>Unit price : <b><?php echo $price; ?></b></p>
+       <p>Unit price: $<b><?php echo $price; ?></b></p>
        <p>Quantity: <b><?php echo $quantity; ?></b></p>
-       <p>Total without discount: <b><?php echo $price*$quantity; ?></b></p>
-       <p>Total with discount: <b><?php echo ($price*$quantity)*(1-($discount/100)); ?></b></p>
+       <p>Total without discount: $<b><?php echo $price*$quantity; ?></b></p>
+       <p>Total with discount: $<b><?php echo ($price*$quantity)*(1-($discount/100)); ?></b></p>
        <p>
-            
-       </p>
 
+       </p>
+        </fieldset>
+    </div>
    </body>
  </html>
