@@ -8,8 +8,8 @@
      function send(page){
         document.formname.action = page;
         document.formname.submit();
-
 }
+</script>
    </head>
    <body>
    <div align="center">
