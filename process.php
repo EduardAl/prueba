@@ -10,7 +10,22 @@ $extension = $_POST['extension'];
 $province = $_POST['province'];
 $country = $_POST['country'];
 $comment = $_POST['comment'];
-
+$array_state = [
+    'Ahuachapán',
+    'Cabañas',
+    'Chalatenango',
+    'Cuscatlán',
+    'La Libertad',
+    'La Paz',
+    'La Unión',
+    'Morazán',
+    'San Miguel',
+    'San Salvador',
+    'San Vicente',
+    'Santa Ana',
+    'Sonsonate',
+    'Usulután'
+];
  ?>
  <!DOCTYPE html>
  <html lang="es" dir="ltr">
@@ -22,7 +37,7 @@ $comment = $_POST['comment'];
 
 
 
-       <h1>Datos</h1>
+       <h1>Information</h1>
        <p>First Name: <b><?php echo $fname; ?></b></p>
        <p>Last Name: <b><?php echo $lname; ?></b></p>
        <p>Company Name: <b><?php echo $company; ?></b></p>
@@ -30,7 +45,7 @@ $comment = $_POST['comment'];
        <p>Email: <b><?php echo $email; ?></b></p>
        <p>Phone: <b><?php echo $phone; ?></b></p>
        <p>Ext: <b><?php echo $extension; ?></b></p>
-       <p>State/Province: <b><?php echo $province; ?></b></p>
+       <p>State/Province: <b><?php echo $array_state[$province]; ?></b></p>
        <p>Country: <b><?php echo $country; ?></b></p>
        <p>Comments:<b><?php echo $comment; ?></b></p>
 
