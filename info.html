@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+        <script languaje="javascript">
+                function limpiarform()
+                    {
+                        document.info.html.reset();
+                    }
+        </script>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Information</title>
@@ -36,7 +42,7 @@
     </style>
 </head>
 
-<body>
+<body onload="limpiarform">
     <div align="center">
         <fieldset><legend style="text-align: center;">Client Information </legend>
         <form action="process3.php" method="POST">

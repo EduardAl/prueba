@@ -4,14 +4,9 @@
    <head>
      <meta charset="utf-8">
      <title></title>
-     <script languaje="javascript">
-        function limpiarform()
-            {
-                document.info.html.reset();
-            }
-</script>
+     
    </head>
-   <body onLoad="limpiarform">
+   <body>
    <div align="center">
         <fieldset><legend style="text-align: center;">Confirmation </legend>
         <form action="process4.php" method="POST">
