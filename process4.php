@@ -11,7 +11,7 @@
         <fieldset><legend style="text-align: center;">Confirmation </legend>
         <form action="info.html" method="POST">
             <h1>Payment successful</h1>
-            <input type="submot" name="go" value="Go home"><br>
+            <input type="submit" name="go" value="Go home"><br>
         </form>
         </fieldset>
     </div>
