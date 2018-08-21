@@ -16,7 +16,7 @@
         <fieldset><legend style="text-align: center;">Confirmation </legend>
         <form action="process4.php" method="POST">
             <h1 >Payment successful</h1>
-            <input type="button" onclick=" limpiarform() history.back(history.back(limpiarform()))" name="back" value="Go home"><br>
+            <input type="button" onclick=" limpiarform() history.back(history.back()" name="back" value="Go home"><br>
         </form>
         </fieldset>
     </div>
