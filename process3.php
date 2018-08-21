@@ -40,7 +40,7 @@ $discount = $_POST[discount];
        <p>Total without discount: $<b><?php echo $price*$quantity; ?></b></p>
        <p>Total with discount: $<b><?php echo ($price*$quantity)*(1-($discount/100)); ?></b></p>
        <p>
-       <input type="submit" name="continue" value="Continue"><br><input type="button" onclick="history.back()" name="volver atrás" value="volver atrás">
+       <input type="submit" name="continue" value="Confirm">     <input type="button" onclick="history.back()" name="back" value="Back"><br>
        </p>
         </fieldset>
     </div>
