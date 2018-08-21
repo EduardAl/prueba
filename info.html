@@ -38,10 +38,10 @@
 
 <body>
     <div align="center">
-        <fieldset><legend style="text-align: center;">Buy Information </legend>
-        <form action="process.php" method="POST">
+        <fieldset><legend style="text-align: center;">Client Information </legend>
+        <form action="process3.php" method="POST">
             <p align="left">
-                <label><span>* </span>First name: </label> <input style="width:200px; align-self: unset;" type="text" name="fname" required placeholder="Juan"><br>
+                <label><span>* </span>First name: </label> <input style="width:200px;" type="text" name="fname" required placeholder="Juan"><br>
                 <label><span>* </span>Last name: </label> <input style="width:200px ;" type="text" name="lname" required placeholder="Rodríguez"><br>
                 <label><span>* </span>Birthdate: </label> <input style="width:200px ;" type="date" name="bdate" required placeholder=$getdate()><br>
                 <label><span>* </span>Card number: </label> <input style="width:200px ;" type="number" name="cnumber" required placeholder="0000111122223333"><br>
@@ -52,27 +52,12 @@
                     <option value="1">DUI</option><br>
                     <option value="2">NIT</option><br>
                 </select><br>
-<?php
-$placeholdr = (string)'';
-    if($doc == '0')
-    {
-        $placeholdr = '02569875-5';
-    }
-    else
-    {
-        $placeholdr = '0002-156598-185-4';
-    }
-?>
-                <label><span>* </span>Documment number: </label> <input style="width:200px ;" type="text" name="dnumber" required placeholder="\<\?php echo \$placeholdr;\?\>"><br>
-                <label><span>* </span>Country: </label> <select style="width:204px ;" name=country>
-                        <option value="1">El Salvador</option><br>
-                </select><br>
+                <label><span>* </span>Documment number: </label> <input style="width:200px ;" type="text" name="dnumber" required placeholder="0000-000000-000-0"><br>
+                <label><span>* </span>Email: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan.rodriguez@google.com"><br>
             </p>
             <p>
-                <label>Comment</label>><textarea name="comment" rows="6" cols="60" placeholder="Please add your comments."></textarea>
-            </p>
-            <p>
-                <input class="sub" type="submit" name="enviar" value="Enviar"><br>
+                    <fieldset><legend style="text-align: center;">Buy Information </legend>
+                    </fieldset>
             </p>
         </form>
     </fieldset>
