@@ -29,6 +29,10 @@
           width: 200px;
           display: inline-block;
       }
+      label span
+      {
+          color: red;
+      }
     </style>
 </head>
 
@@ -37,11 +41,11 @@
     <div aline="center">
         <form action="process.php" method="post">
             <p>
-                <label>Nombre: </label> <input style="width:200px ;" type="text" name="nombre" required placeholder="Jonh"><br>
-                <label>Apellido: </label> <input style="width:200px ;" type="text" name="apellido" required placeholder="Doe"><br>
-                <label>Nombre de la compañía: </label> <input style="width:200px ;" type="text" name="compañía" required placeholder="Google Inc"><br>
+                <span>*</span><label>Nombre: </label> <input style="width:200px ;" type="text" name="nombre" required placeholder="Juan"><br>
+                <label>Apellido: </label> <input style="width:200px ;" type="text" name="apellido" required placeholder="Rodríguez"><br>
+                <label>Nombre de la compañía: </label> <input style="width:200px ;" type="text" name="compañía" required placeholder="Google"><br>
                 <label>Sitio web de la compañía: </label> <input style="width:200px ;" type="text" name="website" required placeholder="www.google.com"><br>
-                <label>Correo electrónico: </label> <input style="width:200px ;" type="text" name="email" required placeholder="john.doe@google.com"><br>
+                <label>Correo electrónico: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan@google.com"><br>
                 <label>Teléfono: </label> <input style="width:200px ;" type="number" name="teléfono" required placeholder="22222222"><label>Ext.: </label> <input style="width:200px ;" type="number" name="extensión" required placeholder="503"><br>
                 <label>Departamento: </label> <select style="width:204px ;" name="departamento">
                     <option value="1">Ahuachapán</option><br>
