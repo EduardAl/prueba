@@ -42,14 +42,14 @@
         <fieldset><legend style="text-align: center;">Information </legend>
         <form action="process.php" method="POST">
             <p align="left">
-                <label><span>* </span>Nombre: </label> <input style="width:200px; align-self: unset;" type="text" name="nombre" required placeholder="Juan"><br>
-                <label><span>* </span>Apellido: </label> <input style="width:200px ;" type="text" name="apellido" required placeholder="Rodríguez"><br>
-                <label><span>* </span>Nombre de la compañía: </label> <input style="width:200px ;" type="text" name="compañía" required placeholder="Google"><br>
-                <label><span>* </span>Sitio web de la compañía: </label> <input style="width:200px ;" type="text" name="website" required placeholder="www.google.com"><br>
-                <label><span>* </span>Correo electrónico: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan@google.com"><br>
-                <label><span>* </span>Teléfono: </label> <input style="width:200px ;" type="number" name="teléfono" required placeholder="22222222"><br>
-                <label><span>* </span>Extensión: </label> <input style="width:200px ;" type="number" name="extensión" required placeholder="503"><br>
-                <label><span>* </span>Departamento: </label> <select style="width:204px ;" name="departamento">
+                <label><span>* </span>First name: </label> <input style="width:200px; align-self: unset;" type="text" name="fname" required placeholder="Juan"><br>
+                <label><span>* </span>Last name: </label> <input style="width:200px ;" type="text" name="lname" required placeholder="Rodríguez"><br>
+                <label><span>* </span>Company name: </label> <input style="width:200px ;" type="text" name="company" required placeholder="Google"><br>
+                <label><span>* </span>Company/Personal website: </label> <input style="width:200px ;" type="text" name="website" required placeholder="www.google.com"><br>
+                <label><span>* </span>Email: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan@google.com"><br>
+                <label><span>* </span>Phone: </label> <input style="width:200px ;" type="number" name="phone" required placeholder="22222222"><br>
+                <label><span>* </span>Extension: </label> <input style="width:200px ;" type="number" name="extension" required placeholder="503"><br>
+                <label><span>* </span>State/Province: </label> <select style="width:204px ;" name="province">
                     <option value="1">Ahuachapán</option><br>
                     <option value="2">Cabañas</option><br>
                     <option value="3">Chalatenango</option><br>
@@ -65,12 +65,12 @@
                     <option value="13">Sonsonate</option><br>
                     <option value="14">Usulután</option><br>
                 </select><br>
-                <label><span>* </span>País: </label> <select style="width:204px ;" name=país>
+                <label><span>* </span>Country: </label> <select style="width:204px ;" name=country>
                         <option value="1">El Salvador</option><br>
                 </select><br>
             </p>
             <p>
-                <label>Comentario</label>><textarea name="comentario" rows="6" cols="60" placeholder="Ingrese sus comentarios."></textarea>
+                <label>Comment</label>><textarea name="comment" rows="6" cols="60" placeholder="Please add your comments."></textarea>
             </p>
             <p>
                 <input class="sub" type="submit" name="enviar" value="Enviar"><br>
