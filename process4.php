@@ -9,9 +9,9 @@
    <body>
    <div align="center">
         <fieldset><legend style="text-align: center;">Confirmation </legend>
-        <form action="" method="POST">
-            <h1 >Payment successful</h1>
-            <input type="button" name="go" value="Go home" onClick="location.href=http://localhost/info.html"/><br>
+        <form action="info.html" method="POST">
+            <h1>Payment successful</h1>
+            <input type="submot" name="go" value="Go home"><br>
         </form>
         </fieldset>
     </div>
