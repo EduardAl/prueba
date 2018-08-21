@@ -1,94 +1,83 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style media="screen">
-      .formulario{
-        margin-left: 100px;
-        margin-top: 50px;
-        padding: 30px;
-        border: 2px double black;
-        border-radius: 3px;
-        width: 700px;
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <style type="text/css">
+      body form{
+          background: black;
+          width: 85%;
+          min-width: 200px;
+          height: 400px;
+          padding:50px;
+          position: center;
       }
-
-      .sub{
-        margin-left: 225px;
-        border-radius: 10px;
-        font-size: 20px;
+      body form input
+      {
+          margin-bottom: 3px;
+      }
+      body form label
+      {
+          margin-bottom: 3px;
+          color: cornflowerblue;
+          width: 300px;
+          display: inline-block;
+          
+      }
+      fieldset
+      {
+          width: 700px;
+      }
+      label span
+      {
+          color: red;
       }
     </style>
-  </head>
-  <body>
-    <form class="formulario" action="" method="post">
-      <label for="fn">*First Name:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;
-      <input type="text" name="fn" value="">
-      <br>
-      <br>
-      <label for="ln">*Last Name:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;
-      <input type="text" name="ln" value="">
-      <br>
-      <br>
-      <label for="cn">Company Name:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <input type="text" name="cn" value="" size="75">
-      <br>
-      <br>
-      <label for="cpw">Company/Personal website:</label>
-      <input type="text" name="cpw" value="" size="75">
-      <br>
-      <br>
-      <label for="correo">*Email:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;
-      <input type="text" name="correo" value="">
-      <br>
-      <br>
-      <label for="cpw">Phone:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;
-      <input type="text" name="cpw" value="">
-      &nbsp;
-      <label for="cpw">Ext:</label>
-      <input type="text" name="cpw" value="">
-      <br>
-      <br>
-      <label for="cpw">State/Province:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;
-      <select class="" name="state/province">
-        <option value="USA">Select for USA or Canada Only</option>
-      </select>
-      <br>
-      <br>
-      <label for="cpw">*Country:</label>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <select class="" name="country">
-        <option value="USA">Select for USA or Canada Only</option>
-      </select>
-      <br>
-      <br>
-      <label for="coment">Comments: </label>
-      <br>
-      <textarea name="coment" rows="2" cols="80"></textarea>
-      <br>
-      <br>
-      <input class="sub" type="submit" name="send" value="Request White Paper">
-    </form>
-  </body>
+</head>
+
+<body>
+    <h3>Formulario</h3>
+    <div align="center">
+        <fieldset><legend style="text-align: center;">Information </legend>
+        <form action="process.php" method="POST">
+            <p align="left">
+                <label><span>* </span>Nombre: </label> <input style="width:200px; align-self: unset;" type="text" name="nombre" required placeholder="Juan"><br>
+                <label><span>* </span>Apellido: </label> <input style="width:200px ;" type="text" name="apellido" required placeholder="Rodríguez"><br>
+                <label><span>* </span>Nombre de la compañía: </label> <input style="width:200px ;" type="text" name="compañía" required placeholder="Google"><br>
+                <label><span>* </span>Sitio web de la compañía: </label> <input style="width:200px ;" type="text" name="website" required placeholder="www.google.com"><br>
+                <label><span>* </span>Correo electrónico: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan@google.com"><br>
+                <label><span>* </span>Teléfono: </label> <input style="width:200px ;" type="number" name="teléfono" required placeholder="22222222"><br>
+                <label><span>* </span>Extensión: </label> <input style="width:200px ;" type="number" name="extensión" required placeholder="503"><br>
+                <label><span>* </span>Departamento: </label> <select style="width:204px ;" name="departamento">
+                    <option value="1">Ahuachapán</option><br>
+                    <option value="2">Cabañas</option><br>
+                    <option value="3">Chalatenango</option><br>
+                    <option value="4">Cuscatlán</option><br>
+                    <option value="5">La Libertad</option><br>
+                    <option value="6">La Paz</option><br>
+                    <option value="7">La Unión</option><br>
+                    <option value="8">Morazán</option><br>
+                    <option value="9">San Miguel</option><br>
+                    <option value="10">San Salvador</option><br>
+                    <option value="11">San Vicente</option><br>
+                    <option value="12">Santa Ana</option><br>
+                    <option value="13">Sonsonate</option><br>
+                    <option value="14">Usulután</option><br>
+                </select><br>
+                <label><span>* </span>País: </label> <select style="width:204px ;" name=país>
+                        <option value="1">El Salvador</option><br>
+                </select><br>
+            </p>
+            <p>
+                <label>Comentario</label>><textarea name="comentario" rows="6" cols="60" placeholder="Ingrese sus comentarios."></textarea>
+            </p>
+            <p>
+                <input type="submit" name="enviar" value="Enviar"><br>
+            </p>
+        </form>
+    </fieldset>
+    </div>
+  
+</body>
 </html>
