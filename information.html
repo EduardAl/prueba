@@ -23,7 +23,7 @@
           color: cornflowerblue;
           width: 200px;
           display: inline-block;
-          align: left;
+          
       }
       label span
       {
@@ -37,7 +37,7 @@
     <div align="center">
         <fieldset style="width: 70%; min-width: 400px; "><legend style="text-align: center;">Information </legend>
         <form action="process.php" method="POST">
-            <p>
+            <p align="left">
                 <label><span>* </span>Nombre: </label> <input style="width:200px; align-self: unset;" type="text" name="nombre" required placeholder="Juan"><br>
                 <label><span>* </span>Apellido: </label> <input style="width:200px ;" type="text" name="apellido" required placeholder="Rodríguez"><br>
                 <label><span>* </span>Nombre de la compañía: </label> <input style="width:200px ;" type="text" name="compañía" required placeholder="Google"><br>
@@ -61,7 +61,6 @@
                     <option value="14">Usulután</option><br>
                     
                 </select>
-                
             </p>
         </form>
     </fieldset>
