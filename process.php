@@ -45,7 +45,7 @@ $array_state = [
        <p>Email: <b><?php echo $email; ?></b></p>
        <p>Phone: <b><?php echo $phone; ?></b></p>
        <p>Ext: <b><?php echo $extension; ?></b></p>
-       <p>State/Province: <b><?php echo $array_state[$province]; ?></b></p>
+       <p>State/Province: <b><?php echo $array_state[$province-1]; ?></b></p>
        <p>Country: <b><?php echo $country; ?></b></p>
        <p>Comments:<b><?php echo $comment; ?></b></p>
 
