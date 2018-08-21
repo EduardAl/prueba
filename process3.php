@@ -32,7 +32,7 @@ $discount = $_POST[discount];
        <h1 >Information</h1>
        <p>First Name: <b><?php echo $fname; ?></b></p>
        <p>Last Name: <b><?php echo $lname; ?></b></p>
-       <p>Birthdate: <b><?php echo $ddate; ?></b></p>
+       <p>Birthdate: <b><?php echo $bdate; ?></b></p>
        <p><?php echo $array_doc[$doc-1];?>: <b><?php echo $dnumber; ?></b></p>
        <p>Email: <b><?php echo $email; ?></b></p>
        <p>Unit price: $<b><?php echo $price; ?></b></p>
