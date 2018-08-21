@@ -49,7 +49,7 @@ $array_country = [
        <p>Ext: <b><?php echo $extension; ?></b></p>
        <p>State/Province: <b><?php echo $array_state[$province-1]; ?></b></p>
        <p>Country: <b><?php echo $array_country[$country-1]; ?></b></p>
-       <p>Comments:<b><?php echo $comment; ?></b></p>
+       <p>Comments: <b><?php echo $comment; ?></b></p>
 
    </body>
  </html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <style type="text/css">
+      body form{
+          background: black;
+          width: 85%;
+          min-width: 200px;
+          height: 400px;
+          padding:50px;
+          position: center;
+      }
+      body form input
+      {
+          margin-bottom: 3px;
+      }
+      body form label
+      {
+          margin-bottom: 3px;
+          color: cornflowerblue;
+          width: 300px;
+          display: inline-block;
+          
+      }
+      fieldset
+      {
+          width: 700px;
+      }
+      label span
+      {
+          color: red;
+      }
+    </style>
+</head>
+
+<body>
+    <div align="center">
+        <fieldset><legend style="text-align: center;">Buy Information </legend>
+        <form action="process.php" method="POST">
+            <p align="left">
+                <label><span>* </span>First name: </label> <input style="width:200px; align-self: unset;" type="text" name="fname" required placeholder="Juan"><br>
+                <label><span>* </span>Last name: </label> <input style="width:200px ;" type="text" name="lname" required placeholder="Rodríguez"><br>
+                <label><span>* </span>birthdate: </label> <input style="width:200px ;" type="date" name="bdate" required placeholder="$getdate()"><br>
+                <label><span>* </span>Company/Personal website: </label> <input style="width:200px ;" type="text" name="website" required placeholder="www.google.com"><br>
+                <label><span>* </span>Email: </label> <input style="width:200px ;" type="text" name="email" required placeholder="juan@google.com"><br>
+                <label><span>* </span>Phone: </label> <input style="width:200px ;" type="number" name="phone" required placeholder="22222222"><br>
+                <label><span>* </span>Extension: </label> <input style="width:200px ;" type="number" name="extension" required placeholder="503"><br>
+                <label><span>* </span>State/Province: </label> <select style="width:204px ;" name="province">
+                    <option value="1">Ahuachapán</option><br>
+                    <option value="2">Cabañas</option><br>
+                    <option value="3">Chalatenango</option><br>
+                    <option value="4">Cuscatlán</option><br>
+                    <option value="5">La Libertad</option><br>
+                    <option value="6">La Paz</option><br>
+                    <option value="7">La Unión</option><br>
+                    <option value="8">Morazán</option><br>
+                    <option value="9">San Miguel</option><br>
+                    <option value="10">San Salvador</option><br>
+                    <option value="11">San Vicente</option><br>
+                    <option value="12">Santa Ana</option><br>
+                    <option value="13">Sonsonate</option><br>
+                    <option value="14">Usulután</option><br>
+                </select><br>
+                <label><span>* </span>Country: </label> <select style="width:204px ;" name=country>
+                        <option value="1">El Salvador</option><br>
+                </select><br>
+            </p>
+            <p>
+                <label>Comment</label>><textarea name="comment" rows="6" cols="60" placeholder="Please add your comments."></textarea>
+            </p>
+            <p>
+                <input class="sub" type="submit" name="enviar" value="Enviar"><br>
+            </p>
+        </form>
+    </fieldset>
+    </div>
+  
+</body>
+</html>
