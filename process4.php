@@ -14,9 +14,9 @@
    <body>
    <div align="center">
         <fieldset><legend style="text-align: center;">Confirmation </legend>
-        <form action="process4.php" method="POST">
+        <form action=" method="POST">
             <h1 >Payment successful</h1>
-            <input type="button" onclick="send('info.html')" name="go" value="Go home"><br>
+            <input type="button" onClick="send('info.html')" name="go" value="Go home"><br>
         </form>
         </fieldset>
     </div>
