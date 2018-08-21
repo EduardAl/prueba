@@ -11,7 +11,7 @@
         <fieldset><legend style="text-align: center;">Confirmation </legend>
         <form action=" method="POST">
             <h1 >Payment successful</h1>
-            <input type="button" onClick="location.href=http://localhost/info.html" name="go" value="Go home"><br>
+            <input type="button" name="go" value="Go home" onClick="location.href=http://localhost/info.html"/><br>
         </form>
         </fieldset>
     </div>
