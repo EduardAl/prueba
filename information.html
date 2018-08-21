@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Information</title>
+  <style type="text/css">
+      body form{
+          background: black;
+          width: 90%;
+          min-width: 400px;
+          height: 400px;
+          padding: 20px;
+          dissplay: inline-block;
+          width: 500px;
+      }
+      body input
+      {
+          display: inline-block;
+      }
+      body form label
+      {
+          color: cornflowerblue;
+          width: 200px;
+          display: inline-block;
+      }
+    </style>
+</head>
+
+<body>
+    <h3>Formulario</h3>
+    <div aline="center">
+        <form action="process.php" method="post">
+            <p>
+                <label>Nombre: </label> <input type="text" name="nombre" required placeholder="Jonh"><br>
+                <label>Apellido: </label> <input type="text" name="apellido" required placeholder="Doe"><br>
+                <label>Nombre de la compañía: </label> <input type="text" name="compañía" required placeholder="Google Inc"><br>
+                <label>Sitio web de la compañía: </label> <input type="text" name="website" required placeholder="www.google.com"><br>
+                <label>Correo electrónico: </label> <input type="text" name="email" required placeholder="john.doe@google.com"><br>
+                <label>Teléfono: </label> <input type="number" name="teléfono" required placeholder="22222222"> <label>Ext.: </label> <input type="number" name="extensión" required placeholder="503"><br>
+                <label>Departamento: </label>
+                
+            </p>
+        </form>
+    </div>
+  
+</body>
+</html>
